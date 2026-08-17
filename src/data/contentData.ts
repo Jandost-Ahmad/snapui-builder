@@ -1,6 +1,7 @@
 import { Principle, ServiceItem, TeamMember, FaqItem, LocationInfo } from '../types';
+import logoImg from '../assets/logo.png';
 
-export const LOGO_URL = "https://lh3.googleusercontent.com/aida-public/AB6AXuAs86d9EHng9whGk9QXWjMOGIb8jbczV1X0qa8s1mZCDLpSaJDfdbhKyQYqt0FQib5wy6ubrZLWlSIJpKRjCYla9jMF_DulC_zyonZcrgHMSXhz0E9AS4sVCjOm3YjBabPU6iO4kO08wc5XtPfIB5y0AjZggfuzNBlAKFsgbuhToFbFeU0U83EgyY_JMkEUZ12LSxDudgFAvOtaFl9sTUFvyjZ5i3J66w-lxi2P6ATLH7fxZrnl5bL3";
+export const LOGO_URL = logoImg;
 
 export const HERO_IMAGE_URL = "https://lh3.googleusercontent.com/aida-public/AB6AXuCSyRDD7MBoz8uzzwF2SQWlWxgd3CTLYaXUJixOP5xA3QIlpJqS0XgSnoKzn11hhtT24U_HtCwmJLdgRe_tE6i0LAfwywVtb_NRcujLsUkeav_q-cVoBId7e8jjavndBGwH3klWMLbM7CUqif1Rc335OjR4MdbTIy3_JciPpBXdVE9hAUjQncOpe7BK3L-2ObbtxiiXdc7IvIs1GKrOCbMteNL0-d5hRlhurv822jiJNMqdq3_PCKNv";
 

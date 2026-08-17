@@ -1,4 +1,5 @@
 import React from 'react';
+import { LOGO_URL } from '../data/contentData';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -28,7 +29,14 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, onOpenS
       {/* Slide-out Menu Panel */}
       <div className="fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-2xl flex flex-col pt-6 px-6 pb-6 overflow-y-auto animate-slide-left">
         <div className="flex justify-between items-center mb-8 border-b border-[#e5e2e1] pb-4">
-          <span className="font-bold text-[#1a675b] text-lg">Lebensassistenz</span>
+          <div className="flex items-center gap-2.5">
+            <img 
+              src={LOGO_URL} 
+              alt="Logo" 
+              className="h-10 w-10 object-contain rounded-full shadow-xs" 
+            />
+            <span className="font-bold text-[#1a675b] text-base">Lebensassistenz</span>
+          </div>
           <button
             onClick={onClose}
             className="text-[#1c1b1b] p-2 hover:bg-[#f6f3f2] rounded-full transition-all active:scale-95"

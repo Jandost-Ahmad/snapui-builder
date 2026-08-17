@@ -55,8 +55,16 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSupportModal, onToggleMobi
           <img 
             src={LOGO_URL} 
             alt="Lebensassistenz Rhein-Sieg-Bonn Logo" 
-            className="h-12 w-auto object-contain" 
+            className="h-12 w-12 object-contain rounded-full shadow-xs" 
           />
+          <div className="flex flex-col">
+            <span className="font-bold text-[#1a675b] text-base md:text-lg leading-tight tracking-tight">
+              Lebensassistenz
+            </span>
+            <span className="text-[11px] md:text-xs text-[#3f4946] font-medium tracking-wide">
+              Rhein-Sieg-Bonn
+            </span>
+          </div>
         </a>
 
         {/* Navigation Links (Desktop) */}

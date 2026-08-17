@@ -11,12 +11,18 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegalModal, onOpenCareerMo
     <footer className="bg-[#2D6359] text-white w-full py-12 md:py-16 px-5 md:px-6 mt-auto">
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
         <div className="flex flex-col gap-4">
-          <img
-            src={LOGO_URL}
-            alt="Lebensassistenz Rhein-Sieg-Bonn Logo"
-            className="h-16 w-auto brightness-0 invert opacity-90 transition-transform duration-300 hover:scale-105 object-contain"
-          />
-          <p className="text-[16px] leading-[24px] text-white/80">
+          <div className="flex items-center gap-3">
+            <img
+              src={LOGO_URL}
+              alt="Lebensassistenz Rhein-Sieg-Bonn Logo"
+              className="h-14 w-14 rounded-full object-cover bg-white p-0.5 shadow-sm transition-transform duration-300 hover:scale-105"
+            />
+            <div>
+              <h3 className="text-xl font-bold text-white tracking-tight">Lebensassistenz</h3>
+              <p className="text-xs text-white/80 font-medium tracking-wide">Rhein-Sieg-Bonn</p>
+            </div>
+          </div>
+          <p className="text-[15px] leading-[22px] text-white/80">
             Nogenter-Platz 4, 53721 Siegburg
           </p>
         </div>
