@@ -55,7 +55,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSupportModal, onToggleMobi
           <img 
             src={LOGO_URL} 
             alt="Lebensassistenz Rhein-Sieg-Bonn Logo" 
-            className="h-12 w-12 object-contain rounded-full shadow-xs" 
+            className="h-14 w-14 object-contain rounded-full shadow-xs" 
           />
           <div className="flex flex-col">
             <span className="font-bold text-[#1a675b] text-base md:text-lg leading-tight tracking-tight">

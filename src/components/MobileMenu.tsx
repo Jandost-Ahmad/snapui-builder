@@ -33,7 +33,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, onOpenS
             <img 
               src={LOGO_URL} 
               alt="Logo" 
-              className="h-10 w-10 object-contain rounded-full shadow-xs" 
+              className="h-12 w-12 object-contain rounded-full shadow-xs" 
             />
             <span className="font-bold text-[#1a675b] text-base">Lebensassistenz</span>
           </div>

@@ -15,7 +15,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegalModal, onOpenCareerMo
             <img
               src={LOGO_URL}
               alt="Lebensassistenz Rhein-Sieg-Bonn Logo"
-              className="h-14 w-14 rounded-full object-cover bg-white p-0.5 shadow-sm transition-transform duration-300 hover:scale-105"
+              className="h-16 w-16 rounded-full object-contain bg-white p-1 shadow-md transition-transform duration-300 hover:scale-105"
             />
             <div>
               <h3 className="text-xl font-bold text-white tracking-tight">Lebensassistenz</h3>
