@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-primary: #1a675b;
+  --color-primary-container: #398073;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #f4fffb;
+  --color-primary-fixed: #a9f0e1;
+  --color-primary-fixed-dim: #8dd4c5;
+  --color-on-primary-fixed: #00201b;
+  --color-on-primary-fixed-variant: #005046;
+
+  --color-secondary: #ab3520;
+  --color-secondary-container: #ff7258;
+  --color-on-secondary: #ffffff;
+  --color-secondary-fixed: #ffdad3;
+  --color-secondary-fixed-dim: #ffb4a5;
+  --color-on-secondary-fixed: #3f0400;
+  --color-on-secondary-fixed-variant: #891d0b;
+
+  --color-tertiary: #7d5400;
+  --color-tertiary-container: #9d6b00;
+  --color-tertiary-fixed: #ffddb0;
+  --color-tertiary-fixed-dim: #feba49;
+  --color-on-tertiary-fixed: #281800;
+
+  --color-background: #fcf9f8;
+  --color-on-background: #1c1b1b;
+  --color-surface: #fcf9f8;
+  --color-surface-subtle: #F7F7F5;
+  --color-surface-dim: #dcd9d9;
+  --color-surface-bright: #fcf9f8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container: #f0eded;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-highest: #e5e2e1;
+  --color-surface-variant: #e5e2e1;
+  --color-on-surface: #1c1b1b;
+  --color-on-surface-variant: #3f4946;
+  --color-inverse-surface: #313030;
+  --color-inverse-on-surface: #f3f0ef;
+
+  --color-footer-deep: #2D6359;
+  --color-outline: #6f7976;
+  --color-outline-variant: #bec9c5;
+}
+
+/* Ambient Hover Effects */
+.ambient-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px rgba(62, 133, 120, 0.05);
+}
+.ambient-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(62, 133, 120, 0.15);
+}
+
+/* Navigation Underline Reveal */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #1a675b;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+

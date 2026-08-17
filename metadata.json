@@ -1,0 +1,6 @@
+{
+  "name": "Lebensassistenz Rhein-Sieg-Bonn",
+  "description": "Ambulante Lebensassistenz im Rhein-Sieg-Kreis und Bonn.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
