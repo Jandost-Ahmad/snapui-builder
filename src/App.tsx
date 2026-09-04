@@ -4,7 +4,9 @@ import { MobileMenu } from './components/MobileMenu';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
 import { PrinciplesSection } from './components/PrinciplesSection';
+import { SupportGoalsSection } from './components/SupportGoalsSection';
 import { ServicesSection } from './components/ServicesSection';
+import { TargetAndExclusionSection } from './components/TargetAndExclusionSection';
 import { TeamSection } from './components/TeamSection';
 import { FaqSection } from './components/FaqSection';
 import { ContactSection } from './components/ContactSection';
@@ -47,7 +49,9 @@ export default function App() {
         />
         <AboutSection />
         <PrinciplesSection />
+        <SupportGoalsSection />
         <ServicesSection onSelectService={(service) => setSelectedService(service)} />
+        <TargetAndExclusionSection />
         <TeamSection onSelectMember={(member) => setSelectedMember(member)} />
         <FaqSection />
         <ContactSection />

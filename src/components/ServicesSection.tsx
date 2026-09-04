@@ -37,17 +37,20 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1a675b]/10 text-[#1a675b] text-xs font-bold uppercase tracking-wider mb-3">
+          Gemäß § 118 SGB IX
+        </div>
         <h2 className="text-[32px] leading-[40px] font-bold tracking-[-0.01em] text-[#1a675b] mb-4">
-          Unsere Leistungen
+          Konzept & Leistungsangebot
         </h2>
-        <p className="text-[18px] leading-[28px] text-[#3f4946] max-w-2xl mx-auto">
-          Individuelle Unterstützung für ein selbstbestimmtes Leben.
+        <p className="text-[17px] md:text-[18px] leading-[28px] text-[#3f4946] max-w-2xl mx-auto">
+          Persönliche Assistenz, Beratung, Begleitung und Unterstützung im Alltag – individuell geplant und flexibel an Ihren Bedarf angepasst.
         </p>
       </motion.div>
 
       {/* Cards Grid */}
       <motion.div
-        className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"

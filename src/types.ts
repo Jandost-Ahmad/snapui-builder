@@ -39,3 +39,16 @@ export interface LocationInfo {
   email: string;
   hours: string;
 }
+
+export interface SupportGoal {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface ExclusionCriterion {
+  id: string;
+  title: string;
+  detail: string;
+}

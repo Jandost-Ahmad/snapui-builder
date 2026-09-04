@@ -29,14 +29,11 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, onOpenS
       {/* Slide-out Menu Panel */}
       <div className="fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-2xl flex flex-col pt-6 px-6 pb-6 overflow-y-auto animate-slide-left">
         <div className="flex justify-between items-center mb-8 border-b border-[#e5e2e1] pb-4">
-          <div className="flex items-center gap-2.5">
-            <img 
-              src={LOGO_URL} 
-              alt="Logo" 
-              className="h-12 w-12 object-contain rounded-full shadow-xs" 
-            />
-            <span className="font-bold text-[#1a675b] text-base">Lebensassistenz</span>
-          </div>
+          <img 
+            src={LOGO_URL} 
+            alt="Lebensassistenz Rhein-Sieg-Bonn" 
+            className="h-10 w-auto object-contain" 
+          />
           <button
             onClick={onClose}
             className="text-[#1c1b1b] p-2 hover:bg-[#f6f3f2] rounded-full transition-all active:scale-95"
@@ -46,7 +43,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, onOpenS
           </button>
         </div>
 
-        <nav className="flex flex-col gap-5 text-[20px] font-semibold mb-8">
+        <nav className="flex flex-col gap-4 text-[18px] font-semibold mb-8">
           <a
             href="#home"
             onClick={(e) => { e.preventDefault(); handleNavClick('#home'); }}
@@ -62,18 +59,40 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, onOpenS
             Über uns
           </a>
           <a
-            href="#team"
-            onClick={(e) => { e.preventDefault(); handleNavClick('#team'); }}
+            href="#grundsaetze"
+            onClick={(e) => { e.preventDefault(); handleNavClick('#grundsaetze'); }}
             className="text-[#3f4946] hover:text-[#1a675b] hover:translate-x-1 transition-transform"
           >
-            Team
+            Grundsätze
+          </a>
+          <a
+            href="#ziele"
+            onClick={(e) => { e.preventDefault(); handleNavClick('#ziele'); }}
+            className="text-[#1a675b] font-bold hover:translate-x-1 transition-transform flex items-center gap-1.5"
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-[#00EBD3]" />
+            Ziele der Unterstützung
           </a>
           <a
             href="#leistungen"
             onClick={(e) => { e.preventDefault(); handleNavClick('#leistungen'); }}
             className="text-[#3f4946] hover:text-[#1a675b] hover:translate-x-1 transition-transform"
           >
-            Leistungen
+            Leistungen (§ 118 SGB IX)
+          </a>
+          <a
+            href="#zielgruppe"
+            onClick={(e) => { e.preventDefault(); handleNavClick('#zielgruppe'); }}
+            className="text-[#3f4946] hover:text-[#1a675b] hover:translate-x-1 transition-transform"
+          >
+            Zielgruppe & Kriterien
+          </a>
+          <a
+            href="#team"
+            onClick={(e) => { e.preventDefault(); handleNavClick('#team'); }}
+            className="text-[#3f4946] hover:text-[#1a675b] hover:translate-x-1 transition-transform"
+          >
+            Team
           </a>
           <a
             href="#faq"
@@ -87,7 +106,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, onOpenS
             onClick={(e) => { e.preventDefault(); handleNavClick('#kontakt'); }}
             className="text-[#3f4946] hover:text-[#1a675b] hover:translate-x-1 transition-transform"
           >
-            Standorte
+            Kontakt
           </a>
         </nav>
 

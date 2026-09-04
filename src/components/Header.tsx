@@ -14,7 +14,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSupportModal, onToggleMobi
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      const sections = ['home', 'ueber-uns', 'team', 'leistungen', 'faq', 'kontakt'];
+      const sections = ['home', 'ueber-uns', 'grundsaetze', 'ziele', 'leistungen', 'zielgruppe', 'team', 'faq', 'kontakt'];
       const scrollPosition = window.scrollY + 120;
 
       for (const sectionId of sections) {
@@ -37,34 +37,29 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSupportModal, onToggleMobi
   const navItems = [
     { id: 'home', label: 'Home', href: '#home' },
     { id: 'ueber-uns', label: 'Über uns', href: '#ueber-uns' },
-    { id: 'team', label: 'Team', href: '#team' },
+    { id: 'grundsaetze', label: 'Grundsätze', href: '#grundsaetze' },
+    { id: 'ziele', label: 'Ziele der Unterstützung', href: '#ziele' },
     { id: 'leistungen', label: 'Leistungen', href: '#leistungen' },
+    { id: 'zielgruppe', label: 'Zielgruppe', href: '#zielgruppe' },
+    { id: 'team', label: 'Team', href: '#team' },
     { id: 'faq', label: 'FAQ', href: '#faq' },
-    { id: 'kontakt', label: 'Standorte', href: '#kontakt' },
+    { id: 'kontakt', label: 'Kontakt', href: '#kontakt' },
   ];
 
   return (
     <header className={`fixed top-0 w-full bg-white z-50 transition-all duration-300 ${scrolled ? 'shadow-md py-1' : 'shadow-sm'}`}>
-      <div className="flex justify-between items-center w-full px-5 md:px-6 max-w-[1200px] mx-auto h-20">
-        {/* Brand */}
+      <div className="flex justify-between items-center w-full px-5 md:px-6 max-w-[1240px] mx-auto h-20">
+        {/* Brand Vector Logo */}
         <a 
           href="#home" 
-          className="flex items-center gap-3 transition-transform duration-300 hover:scale-[1.02]"
+          className="flex items-center transition-transform duration-300 hover:scale-[1.02]"
           aria-label="Lebensassistenz Rhein-Sieg-Bonn Home"
         >
           <img 
             src={LOGO_URL} 
             alt="Lebensassistenz Rhein-Sieg-Bonn Logo" 
-            className="h-14 w-14 object-contain rounded-full shadow-xs" 
+            className="h-11 md:h-13 w-auto object-contain" 
           />
-          <div className="flex flex-col">
-            <span className="font-bold text-[#1a675b] text-base md:text-lg leading-tight tracking-tight">
-              Lebensassistenz
-            </span>
-            <span className="text-[11px] md:text-xs text-[#3f4946] font-medium tracking-wide">
-              Rhein-Sieg-Bonn
-            </span>
-          </div>
         </a>
 
         {/* Navigation Links (Desktop) */}

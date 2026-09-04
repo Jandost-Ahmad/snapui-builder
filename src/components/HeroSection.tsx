@@ -18,21 +18,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenSupportModal, on
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1a675b]/10 text-[#1a675b] text-xs font-bold uppercase tracking-wider mb-5">
+            <span className="w-2 h-2 rounded-full bg-[#00EBD3]" />
+            Ambulante Assistenz nach § 118 SGB IX
+          </div>
           <motion.h1
             className="text-[32px] leading-[40px] md:text-[48px] md:leading-[56px] font-bold tracking-[-0.02em] text-[#1a675b] mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Wir sind für Sie da – einfach, persönlich und mit Herz.
+            Individuelle Assistenz zur Förderung von Selbstständigkeit & Teilhabe
           </motion.h1>
           <motion.p
-            className="text-[18px] leading-[28px] text-[#3f4946] mb-8 max-w-xl"
+            className="text-[17px] md:text-[19px] leading-[28px] text-[#3f4946] mb-8 max-w-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Ambulante Lebensassistenz im Rhein-Sieg-Kreis und Bonn.
+            Sozialraumorientierte Begleitung im Raum Bonn und Rhein-Sieg-Kreis. Sie stehen im Mittelpunkt – als Expertin bzw. Experte für das eigene Leben.
           </motion.p>
           <motion.div
             className="flex flex-col sm:flex-row gap-4"

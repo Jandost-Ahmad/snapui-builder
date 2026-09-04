@@ -31,14 +31,20 @@ export const AboutSection: React.FC = () => {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
+          <span className="text-xs font-bold uppercase tracking-wider text-[#1a675b] block mb-2">
+            Ambulante Lebensassistenz Rhein-Sieg-Bonn
+          </span>
           <h2 className="text-[32px] leading-[40px] font-bold tracking-[-0.01em] text-[#1a675b] mb-6">
-            Über uns
+            Über unser Angebot
           </h2>
-          <p className="text-[18px] leading-[28px] text-[#3f4946] mb-6">
-            Die Lebensassistenz Rhein-Sieg-Bonn steht für Selbstbestimmung, Vertrauen und individuelle Unterstützung. Wir glauben daran, dass jeder Mensch das Recht hat, so lange wie möglich in seinem eigenen Zuhause und vertrauten Umfeld zu leben.
+          <p className="text-[17px] leading-[28px] text-[#3f4946] mb-5">
+            Das Angebot versteht sich als <strong>individuelle, sozialraumorientierte Assistenz</strong> zur Förderung von Selbstständigkeit, Selbstbestimmung und Teilhabe. Die leistungsberechtigte Person steht im Mittelpunkt und wird als Expertin bzw. Experte für das eigene Leben betrachtet.
           </p>
-          <p className="text-[18px] leading-[28px] text-[#3f4946]">
-            Unser Team aus erfahrenen Fachkräften begleitet Sie nicht nur bei alltäglichen Herausforderungen, sondern fördert aktiv Ihre Eigenständigkeit. Wir verstehen uns als Partner auf Augenhöhe, die Sicherheit geben und gleichzeitig Raum für persönliche Entfaltung lassen.
+          <p className="text-[17px] leading-[28px] text-[#3f4946] mb-5">
+            Die Assistenz unterstützt, berät und begleitet, übernimmt aber nicht die Entscheidung der Person. Die Leistungen erfolgen auf Grundlage des <strong>§ 118 SGB IX</strong> und werden individuell geplant, regelmäßig überprüft und an den persönlichen Bedarf angepasst.
+          </p>
+          <p className="text-[17px] leading-[28px] text-[#3f4946]">
+            Gemeinsam werden notwendige und selbstgewählte sozialräumliche Systeme und Ressourcen erschlossen und genutzt. Zum Leistungsangebot gehören persönliche Assistenzleistungen sowie Beratung, Begleitung und Unterstützung im Alltag.
           </p>
         </motion.div>
       </div>

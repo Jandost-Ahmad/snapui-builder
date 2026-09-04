@@ -23,7 +23,7 @@ export const PrinciplesSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-[#f6f3f2] py-16 md:py-24">
+    <section className="bg-[#f6f3f2] py-16 md:py-24" id="grundsaetze">
       <div className="max-w-[1200px] mx-auto px-5 md:px-6">
         {/* Header */}
         <motion.div
@@ -34,10 +34,10 @@ export const PrinciplesSection: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-[32px] leading-[40px] font-bold tracking-[-0.01em] text-[#1a675b] mb-4">
-            Unsere Grundsätze
+            Grundsätze unserer Arbeit
           </h2>
-          <p className="text-[18px] leading-[28px] text-[#3f4946] max-w-2xl mx-auto">
-            Die Werte, die unsere tägliche Arbeit leiten und eine vertrauensvolle Basis für die Zusammenarbeit schaffen.
+          <p className="text-[17px] md:text-[18px] leading-[28px] text-[#3f4946] max-w-2xl mx-auto">
+            Respektvoll, wertschätzend und auf Augenhöhe – wir orientieren uns an Ihren individuellen Bedürfnissen und Ressourcen.
           </p>
         </motion.div>
 
