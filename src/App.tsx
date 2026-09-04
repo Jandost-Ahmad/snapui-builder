@@ -42,7 +42,7 @@ export default function App() {
       />
 
       {/* Main Sections */}
-      <main className="pt-20 flex-grow">
+      <main className="pt-20 md:pt-24 flex-grow">
         <HeroSection
           onOpenSupportModal={() => setIsSupportModalOpen(true)}
           onOpenCareerModal={() => setIsCareerModalOpen(true)}

@@ -35,17 +35,33 @@ export const AboutSection: React.FC = () => {
             Ambulante Lebensassistenz Rhein-Sieg-Bonn
           </span>
           <h2 className="text-[32px] leading-[40px] font-bold tracking-[-0.01em] text-[#1a675b] mb-6">
-            Über unser Angebot
+            Selbstbestimmt im eigenen Lebensraum
           </h2>
           <p className="text-[17px] leading-[28px] text-[#3f4946] mb-5">
-            Das Angebot versteht sich als <strong>individuelle, sozialraumorientierte Assistenz</strong> zur Förderung von Selbstständigkeit, Selbstbestimmung und Teilhabe. Die leistungsberechtigte Person steht im Mittelpunkt und wird als Expertin bzw. Experte für das eigene Leben betrachtet.
+            Wir unterstützen, beraten und begleiten Menschen im Alltag – mit dem Ziel, Selbstständigkeit und gesellschaftliche Teilhabe nachhaltig zu stärken. Bei uns steht jede Person stets als <strong>Expertin bzw. Experte für das eigene Leben</strong> im Mittelpunkt.
           </p>
-          <p className="text-[17px] leading-[28px] text-[#3f4946] mb-5">
-            Die Assistenz unterstützt, berät und begleitet, übernimmt aber nicht die Entscheidung der Person. Die Leistungen erfolgen auf Grundlage des <strong>§ 118 SGB IX</strong> und werden individuell geplant, regelmäßig überprüft und an den persönlichen Bedarf angepasst.
+          <p className="text-[17px] leading-[28px] text-[#3f4946] mb-8">
+            Die Assistenz übernimmt nicht Ihre Entscheidungen, sondern steht Ihnen als verlässlicher Partner zur Seite. Alle Leistungen werden individuell geplant, gemeinsam überprüft und passgenau an Ihren Lebensbedarf angepasst.
           </p>
-          <p className="text-[17px] leading-[28px] text-[#3f4946]">
-            Gemeinsam werden notwendige und selbstgewählte sozialräumliche Systeme und Ressourcen erschlossen und genutzt. Zum Leistungsangebot gehören persönliche Assistenzleistungen sowie Beratung, Begleitung und Unterstützung im Alltag.
-          </p>
+
+          {/* 3 Quick Benefit Badges */}
+          <div className="grid sm:grid-cols-3 gap-4 pt-2">
+            <div className="p-4 rounded-xl bg-[#f6f3f2] border border-[#e5e2e1]/60">
+              <span className="material-symbols-outlined text-[#1a675b] text-2xl mb-1 block">handshake</span>
+              <span className="text-sm font-bold text-[#1c1b1b] block">Auf Augenhöhe</span>
+              <span className="text-xs text-[#64748b]">Respektvoll & wertschätzend</span>
+            </div>
+            <div className="p-4 rounded-xl bg-[#f6f3f2] border border-[#e5e2e1]/60">
+              <span className="material-symbols-outlined text-[#00EBD3] text-2xl mb-1 block">pin_drop</span>
+              <span className="text-sm font-bold text-[#1c1b1b] block">Sozialraum</span>
+              <span className="text-xs text-[#64748b]">Bonn & Rhein-Sieg-Kreis</span>
+            </div>
+            <div className="p-4 rounded-xl bg-[#f6f3f2] border border-[#e5e2e1]/60">
+              <span className="material-symbols-outlined text-[#FF5B14] text-2xl mb-1 block">verified</span>
+              <span className="text-sm font-bold text-[#1c1b1b] block">§ 118 SGB IX</span>
+              <span className="text-xs text-[#64748b]">Eingliederungshilfe</span>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

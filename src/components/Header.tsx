@@ -35,45 +35,40 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSupportModal, onToggleMobi
   }, []);
 
   const navItems = [
-    { id: 'home', label: 'Home', href: '#home' },
     { id: 'ueber-uns', label: 'Über uns', href: '#ueber-uns' },
-    { id: 'grundsaetze', label: 'Grundsätze', href: '#grundsaetze' },
     { id: 'ziele', label: 'Ziele der Unterstützung', href: '#ziele' },
     { id: 'leistungen', label: 'Leistungen', href: '#leistungen' },
-    { id: 'zielgruppe', label: 'Zielgruppe', href: '#zielgruppe' },
-    { id: 'team', label: 'Team', href: '#team' },
-    { id: 'faq', label: 'FAQ', href: '#faq' },
     { id: 'kontakt', label: 'Kontakt', href: '#kontakt' },
   ];
 
   return (
-    <header className={`fixed top-0 w-full bg-white z-50 transition-all duration-300 ${scrolled ? 'shadow-md py-1' : 'shadow-sm'}`}>
-      <div className="flex justify-between items-center w-full px-5 md:px-6 max-w-[1240px] mx-auto h-20">
-        {/* Brand Vector Logo */}
+    <header className={`fixed top-0 w-full bg-white z-50 transition-all duration-300 ${scrolled ? 'shadow-md py-1' : 'shadow-xs'}`}>
+      <div className="flex justify-between items-center w-full px-5 md:px-8 max-w-[1280px] mx-auto h-20 md:h-24">
+        {/* Prominent Official Vector Logo */}
         <a 
           href="#home" 
-          className="flex items-center transition-transform duration-300 hover:scale-[1.02]"
+          className="flex items-center transition-transform duration-300 hover:scale-[1.02] py-1"
           aria-label="Lebensassistenz Rhein-Sieg-Bonn Home"
         >
           <img 
             src={LOGO_URL} 
             alt="Lebensassistenz Rhein-Sieg-Bonn Logo" 
-            className="h-11 md:h-13 w-auto object-contain" 
+            className="h-14 md:h-18 lg:h-20 w-auto object-contain max-w-[260px] md:max-w-[340px]" 
           />
         </a>
 
-        {/* Navigation Links (Desktop) */}
-        <nav className="hidden lg:flex items-center gap-8">
+        {/* Navigation Links (Desktop) - Clean & Streamlined */}
+        <nav className="hidden lg:flex items-center gap-9">
           {navItems.map((item) => {
             const isActive = activeSection === item.id;
             return (
               <a
                 key={item.id}
                 href={item.href}
-                className={`text-[14px] font-semibold leading-[20px] tracking-[0.02em] transition-colors duration-300 ${
+                className={`text-[15px] font-semibold tracking-[-0.01em] transition-colors duration-300 ${
                   isActive
                     ? 'text-[#1a675b] font-bold border-b-2 border-[#1a675b] pb-1'
-                    : 'nav-link text-[#3f4946] hover:text-[#1a675b]'
+                    : 'text-[#3f4946] hover:text-[#1a675b]'
                 }`}
               >
                 {item.label}
@@ -82,29 +77,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSupportModal, onToggleMobi
           })}
         </nav>
 
-        {/* Actions */}
-        <div className="flex items-center gap-4">
-          <a
-            href="tel:+4922412610830"
-            className="hidden md:flex text-[#3f4946] hover:text-[#1a675b] transition-colors duration-300 hover:scale-110 p-2"
-            title="Anrufen: +49 2241 261 08 30"
-          >
-            <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 0" }}>
-              call
-            </span>
-          </a>
-          <a
-            href="mailto:info@lebensassistenz-su-bn.de"
-            className="hidden md:flex text-[#3f4946] hover:text-[#1a675b] transition-colors duration-300 hover:scale-110 p-2"
-            title="E-Mail senden"
-          >
-            <span className="material-symbols-outlined text-2xl" style={{ fontVariationSettings: "'FILL' 0" }}>
-              mail
-            </span>
-          </a>
+        {/* Header Action CTA */}
+        <div className="flex items-center gap-3">
           <button
             onClick={onOpenSupportModal}
-            className="hidden md:inline-flex bg-[#ab3520] text-white px-6 py-3 rounded-lg text-[14px] font-semibold leading-[20px] hover:bg-[#feba49] hover:text-[#281800] transition-all duration-300 hover:scale-[1.03] hover:shadow-md cursor-pointer"
+            className="hidden sm:inline-flex bg-[#ab3520] text-white px-6 py-3 rounded-lg text-[14px] font-semibold hover:bg-[#feba49] hover:text-[#281800] transition-all duration-300 hover:scale-[1.02] shadow-xs cursor-pointer"
           >
             Unterstützung anfragen
           </button>
