@@ -61,16 +61,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenSupportModal, on
 
         {/* Hero Image */}
         <motion.div
-          className="relative w-full aspect-square md:aspect-[4/3] rounded-[2rem] overflow-hidden shadow-lg border border-[#e5e2e1]/60"
+          className="relative w-full aspect-square md:aspect-[4/3] rounded-[2rem] overflow-hidden shadow-lg border border-[#e5e2e1]/60 group"
           initial={{ opacity: 0, scale: 0.95, x: 30 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
           <img
             src={HERO_IMAGE_URL}
-            alt="Freundliche Betreuungskraft unterstützt eine Klientin im Wohnzimmer"
-            className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-700"
+            alt="Freundliche Betreuungskraft unterstützt eine Klientin im vertrauten Wohnraum"
+            className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700"
           />
+          <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-xs py-2 px-4 rounded-xl shadow-md border border-white/60 flex items-center gap-2.5 text-xs font-bold text-[#1a675b]">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#00EBD3] animate-pulse" />
+            <span>Persönliche Begleitung & Assistenz im Alltag</span>
+          </div>
         </motion.div>
       </div>
     </section>

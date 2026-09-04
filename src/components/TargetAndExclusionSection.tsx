@@ -1,16 +1,30 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { TARGET_GROUP_INFO, EXCLUSION_CRITERIA, QUALIFICATION_INFO, NETWORKING_INFO } from '../data/contentData';
+import React from 'react';
+import { motion } from 'motion/react';
+import { TARGET_GROUP_INFO, QUALIFICATION_INFO, NETWORKING_INFO } from '../data/contentData';
 
 export const TargetAndExclusionSection: React.FC = () => {
-  const [showExclusions, setShowExclusions] = useState<boolean>(true);
-
   return (
     <section className="py-16 md:py-24 bg-white border-t border-[#e5e2e1]/60" id="zielgruppe">
       <div className="max-w-[1200px] mx-auto px-5 md:px-6">
         
-        {/* Top Grid: Zielgruppe & Qualifikation */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        {/* Section Header */}
+        <motion.div
+          className="text-center max-w-2xl mx-auto mb-14"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="text-xs font-bold uppercase tracking-wider text-[#1a675b] block mb-2">
+            Orientierung & Kompetenz
+          </span>
+          <h2 className="text-[32px] leading-[40px] font-bold tracking-tight text-[#1a675b]">
+            Zielgruppe & Fachliche Qualifikation
+          </h2>
+        </motion.div>
+
+        {/* 2-Column Grid: Zielgruppe & Qualifikation */}
+        <div className="grid md:grid-cols-2 gap-8">
           
           {/* Zielgruppe Card */}
           <motion.div
@@ -82,67 +96,6 @@ export const TargetAndExclusionSection: React.FC = () => {
           </motion.div>
 
         </div>
-
-        {/* Bottom Section: Transparente Ausschlusskriterien */}
-        <motion.div
-          className="bg-[#f8fafc] rounded-2xl p-8 border border-[#e2e8f0]"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-[#e2e8f0]">
-            <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="material-symbols-outlined text-xl text-[#e11d48]">info</span>
-                <h4 className="text-xl font-bold text-[#1e293b]">
-                  Transparenz & Ausschlusskriterien
-                </h4>
-              </div>
-              <p className="text-sm text-[#64748b]">
-                Das Leistungsangebot ist nicht für jede Unterstützungsform geeignet. Für fachliche Klarheit benennen wir transparente Grenzen:
-              </p>
-            </div>
-            <button
-              onClick={() => setShowExclusions(!showExclusions)}
-              className="text-xs font-semibold text-[#1a675b] hover:text-[#00EBD3] flex items-center gap-1 cursor-pointer transition-colors"
-            >
-              <span>{showExclusions ? 'Einklappen' : 'Alle 6 Kriterien anzeigen'}</span>
-              <span className="material-symbols-outlined text-base">
-                {showExclusions ? 'expand_less' : 'expand_more'}
-              </span>
-            </button>
-          </div>
-
-          <AnimatePresence>
-            {showExclusions && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.3 }}
-                className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-6"
-              >
-                {EXCLUSION_CRITERIA.map((criterion) => (
-                  <div
-                    key={criterion.id}
-                    className="bg-white p-5 rounded-xl border border-[#e2e8f0] shadow-2xs flex flex-col justify-between"
-                  >
-                    <div>
-                      <div className="flex items-center gap-2 text-[#e11d48] mb-2 font-bold text-sm">
-                        <span className="material-symbols-outlined text-base">cancel</span>
-                        <span>{criterion.title}</span>
-                      </div>
-                      <p className="text-xs md:text-sm text-[#64748b] leading-relaxed">
-                        {criterion.detail}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </motion.div>
 
       </div>
     </section>

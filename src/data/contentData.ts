@@ -2,15 +2,16 @@ import { Principle, ServiceItem, TeamMember, FaqItem, LocationInfo, SupportGoal,
 import logoFullSvg from '../assets/logo-full.svg';
 import logoSymbolSvg from '../assets/logo-symbol.svg';
 import logoPng from '../assets/logo-symbol.png';
+import heroImg from '../assets/hero-assistenz.jpg';
+import aboutImg from '../assets/about-teilhabe.jpg';
 
 export const LOGO_FULL_URL = logoFullSvg;
 export const LOGO_SYMBOL_URL = logoSymbolSvg;
 export const LOGO_URL = logoFullSvg;
 export const LOGO_PNG_URL = logoPng;
 
-export const HERO_IMAGE_URL = "https://lh3.googleusercontent.com/aida-public/AB6AXuCSyRDD7MBoz8uzzwF2SQWlWxgd3CTLYaXUJixOP5xA3QIlpJqS0XgSnoKzn11hhtT24U_HtCwmJLdgRe_tE6i0LAfwywVtb_NRcujLsUkeav_q-cVoBId7e8jjavndBGwH3klWMLbM7CUqif1Rc335OjR4MdbTIy3_JciPpBXdVE9hAUjQncOpe7BK3L-2ObbtxiiXdc7IvIs1GKrOCbMteNL0-d5hRlhurv822jiJNMqdq3_PCKNv";
-
-export const ABOUT_IMAGE_URL = "https://lh3.googleusercontent.com/aida-public/AB6AXuCEviRWKOEx4EKUC8wZp2_6shSsaLhEJFnmZAKtR7dlEfb9UR-TdtPI0MnEfcFU6IhklrXp5drKPHJssQXu_Jr7XuDhYXGz0PIzFsjal0niOV7caoFwYRwelyevTPnfEfPQwWSx40mFfXPQsI8TOjx859dk6VBYVR38vZimevludMUnVAkF_-CjEQPoN_Vo4s1uEYwUUG69-JpBtSwTYyItkOJmixlrGGFps2zEUz-s5yJWk_BX8Qo0";
+export const HERO_IMAGE_URL = heroImg;
+export const ABOUT_IMAGE_URL = aboutImg;
 
 // Grundsätze der Arbeit (nach dem Konzeptdokument)
 export const PRINCIPLES: Principle[] = [
