@@ -190,31 +190,31 @@ export const NETWORKING_INFO = {
 // Teammitglieder
 export const TEAM_MEMBERS: TeamMember[] = [
   {
-    id: 'sabine-mueller',
-    name: 'Sabine Müller',
-    role: 'Pädagogische Leitung',
-    phone: '+49 2241 261 08 30',
-    email: 'leitung@lebensassistenz-su-bn.de',
+    id: 'team-1',
+    name: '',
+    role: '',
+    phone: '',
+    email: '',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB614ujBmCgkkS19Z3ZxYkvzTuB73s1BSgR3ytPC-n5R8t1-NTs9OLL1Z2uMXlLuvVMkfDMzJjAwfWR5AAwRu1Ff2_Jeu4E09S2nuKJOf_v9VgaWCqDpveTyDRFCvOht3lOILE7fKHZni_vrftQ020YksqJjDddOTWpb3mxrHPz-dacBWeMBjTJ5FIVasprCNyuj0KFfaGx7205iw6C0hIqI6vlA8LSQbjgGDbtPj-yRTYvBUyOkhGn',
-    bio: 'Als pädagogische Leitung koordiniert sie die individuellen Assistenzpläne nach § 118 SGB IX und pflegt die enge Vernetzung mit Leistungsträgern und Fachstellen im Rhein-Sieg-Kreis und Bonn.'
+    bio: ''
   },
   {
-    id: 'julia-schmidt',
-    name: 'Julia Schmidt',
-    role: 'Sozialarbeiterin (B.A.)',
-    phone: '+49 2241 261 08 31',
-    email: 'j.schmidt@lebensassistenz-su-bn.de',
+    id: 'team-2',
+    name: '',
+    role: '',
+    phone: '',
+    email: '',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAL3iqQChJZgtBQgcRfXUNXiNuSYszVw3tRLM8UsVkACFfThDvdFlkjA_4_gF5iP-UyejrH7qBZJhLaFVq3e4emGC4PoNZ6eHOY92R1o8G4yM8qN9yS4wN6T45GU91E2C9FpcbRs9DqErMlW3cVL3C1cI8icsWHNCllLa6Ou6KqLnJs_nfkVDlJ68wb1WtawIx5KUsJVhYKkDpVg-D_g1EzaqZMj3IlXZo5bjnchOyBcY92P4-PnXXu',
-    bio: 'Julia Schmidt berät Klient*innen und Angehörige bei behördlichen Fragen, Eingliederungshilfeanträgen und unterstützt beim Erschließen sozialräumlicher Ressourcen.'
+    bio: ''
   },
   {
-    id: 'markus-weber',
-    name: 'Markus Weber',
-    role: 'Heilerziehungspfleger',
-    phone: '+49 2241 261 08 32',
-    email: 'm.weber@lebensassistenz-su-bn.de',
+    id: 'team-3',
+    name: '',
+    role: '',
+    phone: '',
+    email: '',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAPz7EwEtw3iLuHE6jTrij2ZrX0hi86NMl2Erik0vRyUHqUp5M7dAdPvIVgHjNSj24BZfP7yhraSJBfTXgx_F5FrDuj8a8q-zg9XP1HTw0f2AGdRDYBFb2tVg_fjfxsIKoGuQuB7TnpEalk1UU00FKA18kv_8uF7nv261etraFJE9h7HFs2O2IRO35xHJ67qHXiyUZTCNYp-bZ8O0URUUvVqB3FpIryegefmEYp8QUz95jziMafeULR',
-    bio: 'Markus Weber begleitet Klient*innen im Alltag und unterstützt verlässlich bei der praktischen Alltagsstrukturierung, Arztbesuchen und der Stärkung des Selbsthilfepotenzials.'
+    bio: ''
   }
 ];
 

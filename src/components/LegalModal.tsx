@@ -46,11 +46,6 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
               </div>
 
               <div>
-                <p className="font-bold text-[#1c1b1b]">Vertreten durch:</p>
-                <p>Geschäftsführung: Sabine Müller, Markus Weber</p>
-              </div>
-
-              <div>
                 <p className="font-bold text-[#1c1b1b]">Kontakt:</p>
                 <p>
                   Telefon: +49 2241 261 08 30<br />
